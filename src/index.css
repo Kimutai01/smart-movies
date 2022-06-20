@@ -2,10 +2,25 @@
 font-family: 'Dosis', sans-serif;
 font-family: 'Lato', sans-serif; */
 
-body {
-  background-color: red;
-}
-
 nav {
   background-color: blue;
+}
+
+.main-nav {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.logo {
+  color: white;
+}
+
+.logo:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) {
+  span {
+    background: white;
+  }
 }
