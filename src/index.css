@@ -4,6 +4,7 @@ font-family: 'Lato', sans-serif; */
 body {
   background: black;
 }
+
 nav {
   background-color: blue;
 }
@@ -20,6 +21,7 @@ nav {
   color: white;
   opacity: 0.8;
 }
+
 .footer-div p {
   font-size: 1.4rem;
 }
@@ -28,10 +30,12 @@ nav {
   text-decoration: none;
   color: #e67e22;
 }
+
 @media screen and (max-width: 992px) {
   span {
     background: white;
   }
+
   .footer-div p {
     font-size: 1.1rem;
   }
