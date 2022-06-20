@@ -2,10 +2,6 @@
 font-family: 'Dosis', sans-serif;
 font-family: 'Lato', sans-serif; */
 
-body {
-  background-color: dar;
-}
-
 nav {
   background-color: blue;
 }
@@ -17,6 +13,7 @@ nav {
 .logo {
   color: white;
 }
+
 .logo:hover {
   color: white;
   opacity: 0.8;
