@@ -1,12 +1,29 @@
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Dosis', sans-serif;
 font-family: 'Lato', sans-serif; */
+
 body {
   background: black;
 }
 
 nav {
   background-color: blue;
+}
+.grid {
+  display: grid;
+  row-gap: 4.6rem;
+  column-gap: 5.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 7px 8px 3px rgb(233, 177, 177);
 }
 
 .main-nav {
@@ -31,12 +48,26 @@ nav {
   color: #e67e22;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   span {
     background: white;
   }
 
   .footer-div p {
     font-size: 1.1rem;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .grid--4-cols {
+    grid-template-columns: 1fr;
   }
 }
