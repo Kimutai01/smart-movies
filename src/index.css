@@ -1,6 +1,9 @@
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Dosis', sans-serif;
 font-family: 'Lato', sans-serif; */
+body {
+  background: black;
+}
 
 nav {
   background-color: blue;
@@ -19,8 +22,21 @@ nav {
   opacity: 0.8;
 }
 
+.footer-div p {
+  font-size: 1.4rem;
+}
+
+.footer-div a {
+  text-decoration: none;
+  color: #e67e22;
+}
+
 @media screen and (max-width: 992px) {
   span {
     background: white;
+  }
+
+  .footer-div p {
+    font-size: 1.1rem;
   }
 }
