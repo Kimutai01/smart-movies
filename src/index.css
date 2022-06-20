@@ -9,21 +9,53 @@ body {
 nav {
   background-color: blue;
 }
+img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
 .grid {
   display: grid;
   row-gap: 4.6rem;
   column-gap: 5.4rem;
   grid-template-columns: repeat(2, 1fr);
 }
+.love,
+.message {
+  color: #fff;
+}
+.love {
+  margin-right: 10px;
+}
+.love-div {
+  display: flex;
+  justify-content: space-between;
+}
+.likes {
+  display: flex;
+  align-self: center;
+}
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
 
+h5 {
+  font-family: "Dosis", sans-serif;
+}
+
 .card {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 1px 7px 8px 3px rgb(233, 177, 177);
+  box-shadow: 1px 7px 8px 3px rgb(133, 127, 127);
+  background: rgb(36, 30, 30);
+  transition: all 400ms linear;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-body {
+  padding: 0;
+  margin: 0;
 }
 
 .main-nav {
