@@ -28,12 +28,23 @@ export default displayData;
 const popupModal = document.querySelector('.popup-overly');
 const modal = document.querySelector('.modal1');
 const close = document.querySelector('.btn-close');
+
 document.querySelector('.display').addEventListener('click', (e) => {
   if (e.target.classList.contains('message')) {
     popupModal.style.display = 'block';
     modal.style.display = 'block';
   }
 });
+
+document.querySelector('.modal1').addEventListener('click', (e) => {
+  const comments = document.querySelector('.comment-section');
+  if (e.target.classList.contains('show')) {
+    comments.style.display = 'block';
+  } else {
+    comments.style.display = 'none';
+  }
+});
+
 close.addEventListener('click', () => {
   popupModal.style.display = 'none';
   modal.style.display = 'none';
