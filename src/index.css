@@ -127,32 +127,32 @@ h5 {
   background-color: #fefefeb4;
 }
 
-.show-msg{
+.show-msg {
   display: flex;
   gap: 1rem;
 }
 
-.show-msg p{
+.show-msg p {
   font-size: 1.4rem;
   color: black;
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 
-.show-msg p:hover{
+.show-msg p:hover {
   color: black;
   opacity: 1;
 }
 
-.show{
+.show {
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
   color: black;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.show:hover{
+.show:hover {
   color: black;
   opacity: 1;
 }
@@ -172,7 +172,8 @@ h5 {
 }
 
 .header1 p,
-.header2 p, .header3 p {
+.header2 p,
+.header3 p {
   font-size: 1.2rem;
   font-family: 'Dosis', sans-serif;
   font-weight: 500;
@@ -262,11 +263,11 @@ textarea {
   right: 1px;
 }
 
-.scroll-div{
+.scroll-div {
   background-color: #f7f3ee;
 }
 
-.scroll{
+.scroll {
   height: 400px;
   overflow: hidden;
   overflow-y: scroll;
@@ -302,7 +303,7 @@ textarea {
     width: 100%;
   }
 
-  .send-data{
+  .send-data {
     position: relative;
     right: 0;
   }
@@ -310,12 +311,13 @@ textarea {
   .modal1 {
     width: 100%;
   }
-  .comment-section{
+
+  .comment-section {
     width: 100%;
     border-radius: 10px;
   }
 
-  .scroll{
+  .scroll {
     height: 300px;
   }
 }
@@ -329,17 +331,18 @@ textarea {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
-  .comment-section{
+
+  .comment-section {
     width: 100%;
     border-radius: 10px;
   }
 
-  .send-data{
+  .send-data {
     position: relative;
     right: 0;
   }
 
-  .scroll{
+  .scroll {
     height: 300px;
   }
 
