@@ -88,6 +88,191 @@ h5 {
   color: #e67e22;
 }
 
+.popup-overly {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(50px);
+}
+
+.modal1 {
+  border-radius: 10px;
+  display: none;
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 1000;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-gap: 1rem;
+}
+
+.content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefeb4;
+}
+
+.header1 p,
+.header2 p,
+.header3 p {
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+}
+
+.paragraph p {
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+}
+
+.show-msg {
+  display: flex;
+  gap: 1rem;
+}
+
+.show-msg p {
+  font-size: 1.4rem;
+  color: black;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.show-msg p:hover {
+  color: black;
+  opacity: 1;
+}
+
+.show {
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  opacity: 0.7;
+}
+
+.show:hover {
+  color: black;
+  opacity: 1;
+}
+
+#movie-title {
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+
+.sub-title {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.mr-4 {
+  margin-right: 4%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.comment-header {
+  position: relative;
+}
+
+.comment-title {
+  padding: 5px;
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+}
+
+.comment-count {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e67e22;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  padding: 5px;
+  top: 5px;
+  right: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+}
+
+.comment-section {
+  background-color: #b4b1ad;
+  width: 80%;
+  margin: 10px auto;
+  display: none;
+  border-radius: 10px;
+}
+
+.comment-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.form {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #7a746a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.send-data {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  right: 1px;
+}
+
+.scroll-div {
+  background-color: #f7f3ee;
+}
+
+.scroll {
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 @media (max-width: 992px) {
   span {
     background: white;
@@ -106,10 +291,68 @@ h5 {
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .content-section {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .comment-form {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+  }
+
+  .send-data {
+    position: relative;
+    right: 0;
+  }
+
+  .modal1 {
+    width: 100%;
+  }
+
+  .comment-section {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .scroll {
+    height: 300px;
+  }
 }
 
 @media (max-width: 576px) {
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  .content-section {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .comment-section {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .send-data {
+    position: relative;
+    right: 0;
+  }
+
+  .scroll {
+    height: 300px;
+  }
+
+  .comment-form {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+  }
+
+  .modal1 {
+    width: 100%;
   }
 }
