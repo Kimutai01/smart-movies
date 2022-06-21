@@ -106,7 +106,7 @@ h5 {
   border-radius: 10px;
   display: none;
   background-color: #fefefe;
-  margin: 3% auto;
+  margin: 0 auto;
   padding: 20px;
   z-index: 1000;
   border: 1px solid #888;
@@ -115,7 +115,7 @@ h5 {
 
 .content-section {
   display: grid;
-  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-columns: 1.2fr 0.8fr;
   grid-gap: 1rem;
 }
 
@@ -127,6 +127,36 @@ h5 {
   background-color: #fefefeb4;
 }
 
+.show-msg{
+  display: flex;
+  gap: 1rem;
+}
+
+.show-msg p{
+  font-size: 1.4rem;
+  color: black;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.show-msg p:hover{
+  color: black;
+  opacity: 1;
+}
+
+.show{
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  opacity: .7;
+}
+
+.show:hover{
+  color: black;
+  opacity: 1;
+}
+
 #movie-title {
   font-size: 25px;
   font-family: 'Dosis', sans-serif;
@@ -136,13 +166,13 @@ h5 {
 .sub-title {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
 }
 
 .header1 p,
-.header2 p {
+.header2 p, .header3 p {
   font-size: 1.2rem;
   font-family: 'Dosis', sans-serif;
   font-weight: 500;
@@ -190,9 +220,11 @@ h5 {
 }
 
 .comment-section {
-  background-color: #ccc5b9;
+  background-color: #b4b1ad;
   width: 80%;
   margin: 10px auto;
+  display: none;
+  border-radius: 10px;
 }
 
 .comment-form {
@@ -205,7 +237,8 @@ h5 {
 .form {
   margin: 10px auto;
   padding: 10px;
-  background-color: #ccc5b9;
+  background-color: #7a746a;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -227,6 +260,16 @@ textarea {
   font-size: 24px;
   position: absolute;
   right: 1px;
+}
+
+.scroll-div{
+  background-color: #f7f3ee;
+}
+
+.scroll{
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 @media (max-width: 992px) {
@@ -259,8 +302,21 @@ textarea {
     width: 100%;
   }
 
+  .send-data{
+    position: relative;
+    right: 0;
+  }
+
   .modal1 {
     width: 100%;
+  }
+  .comment-section{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .scroll{
+    height: 300px;
   }
 }
 
@@ -272,6 +328,19 @@ textarea {
   .content-section {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+  }
+  .comment-section{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .send-data{
+    position: relative;
+    right: 0;
+  }
+
+  .scroll{
+    height: 300px;
   }
 
   .comment-form {
