@@ -1,4 +1,4 @@
-import displayData from './displayData.js';
+import displayData, { displayPopup } from './displayData.js';
 
 const getData = async () => {
   const response = await fetch('https://api.tvmaze.com/shows');
@@ -7,6 +7,7 @@ const getData = async () => {
   }
   const data = await response.json();
   displayData(data);
+  displayPopup(data);
 };
 
 export default getData;
