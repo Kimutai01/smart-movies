@@ -1,12 +1,69 @@
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Dosis', sans-serif;
 font-family: 'Lato', sans-serif; */
+
 body {
   background: black;
 }
 
 nav {
   background-color: blue;
+}
+
+img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+.grid {
+  display: grid;
+  row-gap: 4.6rem;
+  column-gap: 5.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.love,
+.message {
+  color: #fff;
+}
+
+.love {
+  margin-right: 10px;
+}
+
+.love-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes {
+  display: flex;
+  align-self: center;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+h5 {
+  font-family: "Dosis", sans-serif;
+}
+
+.card {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 7px 8px 3px rgb(133, 127, 127);
+  background: rgb(36, 30, 30);
+  transition: all 400ms linear;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 0;
+  margin: 0;
 }
 
 .main-nav {
@@ -31,12 +88,28 @@ nav {
   color: #e67e22;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   span {
     background: white;
   }
 
   .footer-div p {
     font-size: 1.1rem;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid--4-cols {
+    grid-template-columns: 1fr;
   }
 }
