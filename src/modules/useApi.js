@@ -1,4 +1,5 @@
 import displayData, { displayPopup } from './displayData.js';
+import commentPost from './commentsApi.js';
 
 const getData = async () => {
   const response = await fetch('https://api.tvmaze.com/shows');
@@ -8,6 +9,7 @@ const getData = async () => {
   const data = await response.json();
   displayData(data);
   displayPopup(data);
+  commentPost(data);
 };
 
 export default getData;
