@@ -89,14 +89,14 @@ export const displayPopup = (data) => {
                 </div>
                </div>
                   </div>
-                 </div>
-                 
+                 </div>  
                  <div class="form container">
-                   <form class="comment-form">
-                       <input type="text" class="name" placeholder="Enter your name">
-                       <input class="msg" placeholder="Write a comment">
+                   <div class="comment-form">
+                       <input type="hidden" class="id" value ="${dat.id}">
+                       <input type="text" class="userName" placeholder="Enter your name">
+                       <input class="CommentMsg" placeholder="Write a comment">
                        <ion-icon name="arrow-back-outline" class="send-data"></ion-icon>
-                    </form>
+                    </div>
                   </div>
                </div>
          `;
