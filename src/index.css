@@ -129,11 +129,14 @@ footer {
   display: none;
   background-color: #fefefe;
   margin: 20px auto;
+  left: 10%;
   padding: 20px;
   z-index: 1000;
   border: 1px solid #888;
   width: 80%;
   margin-bottom: 20px;
+  position: fixed;
+  overflow-y: hidden;
 }
 
 .content-section {
@@ -165,6 +168,11 @@ footer {
   font-weight: 500;
 }
 
+.paragraph {
+  width: 90%;
+  margin: 2px auto;
+}
+
 .paragraph p {
   font-size: 1.2rem;
   font-family: 'Dosis', sans-serif;
@@ -181,6 +189,14 @@ footer {
   color: black;
   opacity: 0.7;
   cursor: pointer;
+}
+
+.s-item p {
+  color: black;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  padding: 5px;
 }
 
 .show-msg p:hover {
@@ -221,12 +237,38 @@ footer {
   font-weight: 700;
 }
 
+.item {
+  position: relative;
+  padding: 3px 0;
+}
+
+.dateId {
+  position: absolute;
+  top: 60%;
+  right: 20px;
+  color: black;
+  font-size: 12px;
+}
+
+.tName {
+  font-weight: 700;
+}
+
+.s-item {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+}
+
+.s-item:nth-child(odd) {
+  background-color: rgb(202, 191, 191);
+}
+
 .comment-header {
   position: relative;
 }
 
 .comment-title {
-  padding: 5px;
+  padding: 2px;
   font-size: 1.2rem;
   font-family: 'Dosis', sans-serif;
   font-weight: 500;
@@ -240,7 +282,7 @@ footer {
   color: #fff;
   text-align: center;
   position: absolute;
-  padding: 5px;
+  padding: 2px;
   top: 5px;
   right: 5px;
   align-items: center;
@@ -254,7 +296,6 @@ footer {
   background-color: #b4b1ad;
   width: 80%;
   margin: 5px 0;
-  display: none;
   border-radius: 10px;
 }
 
@@ -291,15 +332,21 @@ textarea {
   color: #fff;
   font-size: 27px;
   position: absolute;
-  right: 3px;
+  right: 7px;
+  transition: all 400ms linear;
+}
+
+.send-data:hover {
+  transform: scale(1);
 }
 
 .scroll-div {
   background-color: #f7f3ee;
+  display: none;
 }
 
 .scroll {
-  height: auto;
+  height: 200px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -351,6 +398,7 @@ textarea {
 
   .modal1 {
     width: 100%;
+    left: 0;
   }
 
   .comment-section {
@@ -369,6 +417,8 @@ textarea {
 
   .sub-title {
     grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .header1,
@@ -446,10 +496,13 @@ textarea {
 
   .modal1 {
     width: 100%;
+    left: 0;
   }
 
   .sub-title {
     grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .header1,
@@ -461,7 +514,7 @@ textarea {
   }
 
   .mr-4 {
-    margin-right: 10%;
+    margin-right: 4%;
   }
 
   .img-div {

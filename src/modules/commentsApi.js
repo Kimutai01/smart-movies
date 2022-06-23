@@ -2,17 +2,18 @@ const commentPost = () => {
   document.querySelector('.modal1').addEventListener('click', (e) => {
     const userName = document.querySelector('.userName');
     const commentMsg = document.querySelector('.CommentMsg');
-    const dataId = document.querySelector('.id');
+    const dataId = document.querySelector('.id').value;
     if (e.target.classList.contains('send-data')) {
       const commentObj = {
         comment: commentMsg.value,
         username: userName.value,
-        item_id: dataId.value,
+        item_id: dataId,
       };
       postComment(commentObj);
       commentMsg.value = '';
       userName.value = '';
     }
+    getComment(dataId);
   });
 };
 
@@ -32,4 +33,30 @@ const postComment = async (commentObj) => {
   }
   const data = await response.text();
   return data;
+};
+
+const displayComments = (data) => {
+  let output = '';
+  // const commentNum = data.length;
+  data.forEach((item) => {
+    const location = document.querySelector('.Load_comment');
+    output += `
+      <div class="item">
+        <div class="s-item">
+        <p class="tName">${item.username}</p>
+        <p>${item.comment}</p>
+        </div>
+        <p class="dateId"><small>${item.creation_date}</small></p>
+      </div>
+    `;
+    location.innerHTML = output;
+  });
+};
+
+const getComment = async (dataId) => {
+  const response = await fetch(
+    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/LbawEnU3eIyZSrPUhv4Q/comments?item_id=${dataId}`,
+  );
+  const data = await response.json();
+  displayComments(data);
 };
