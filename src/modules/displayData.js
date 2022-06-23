@@ -72,17 +72,12 @@ export const displayPopup = (data) => {
                    <div class="comment-div">
                      <div class="comment-header">
                        <p class="comment-title">Comments</p>
-                       <p class="comment-count">3</p>
+                       <p class="comment-count"></p>
                      </div>
                      <div class="scroll-div">
-                       <ul class="scroll">
-                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequuntur.</li>
-                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequuntur.</li>
-                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequuntur.</li>
-                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequuntur.</li>
-                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequuntur.</li>
-                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consequuntur.</li>
-                       </ul>
+                       <div class="scroll Load_comment">
+                        
+                      </div> 
                      </div>
                    </div>
                   </div>
@@ -118,7 +113,7 @@ const popupModal = document.querySelector('.popup-overly');
 const modal = document.querySelector('.modal1');
 
 document.querySelector('.modal1').addEventListener('click', (e) => {
-  const comments = document.querySelector('.comment-section');
+  const comments = document.querySelector('.scroll-div');
   if (e.target.classList.contains('show')) {
     comments.style.display = 'block';
   } else {
