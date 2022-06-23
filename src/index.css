@@ -303,7 +303,7 @@ footer {
 .comment-section {
   background-color: #b4b1ad;
   width: 80%;
-  margin: 5px 0;
+  margin: 2px 0;
   border-radius: 10px;
 }
 
@@ -315,7 +315,7 @@ footer {
 }
 
 .form {
-  margin: 10px auto;
+  margin: 5px auto;
   padding: 10px;
   background-color: #7a746a;
   border-radius: 10px;
@@ -323,7 +323,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 input,
