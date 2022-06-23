@@ -65,7 +65,7 @@ const displayLikeData = async () => {
 
 const homeCounter = (data) => {
   let sum = 0;
-  data.forEach((dat) => {
+  data.forEach(() => {
     sum += 1;
   });
   const paraC = document.querySelector('.counter');

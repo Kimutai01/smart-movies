@@ -117,11 +117,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(50px);
 }
+
 .rating1 {
   color: orange;
   font-size: 24px;
   margin-top: 2px;
 }
+
 .counter {
   font-size: 1.5rem;
   color: #e67e22;
