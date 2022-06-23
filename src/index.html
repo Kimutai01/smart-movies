@@ -13,13 +13,14 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://kit.fontawesome.com/b0c7c255c0.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light main-nav">
+    <nav class="navbar navbar-expand-lg navbar-light main-nav fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="#">Smart movies</a>
         <button
@@ -31,21 +32,23 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon iconn"></span>
+        <i class="fa-solid fa-bars iconn"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
           <div class="form-div mx-auto"></div>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <div class="search-section">
+            <form class="d-flex search-div">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success btn-2" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </nav>
@@ -66,6 +69,6 @@
         </p>
       </div>
     </footer>
-    <script src="https://kit.fontawesome.com/b0c7c255c0.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
