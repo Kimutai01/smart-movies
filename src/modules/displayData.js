@@ -11,9 +11,9 @@ const displayData = (data) => {
     </div>
     <div class="card-footer m">
     <div class="love-div mt-3">
-    <div class="likes">
-    <ion-icon name="heart" class="love mt-1 "></ion-icon>
-    <p class="text-light">20</p>
+    <div class="likes"> 
+    <ion-icon name="heart" class="love mt-1" id="like-${dat.id}"></ion-icon>
+    <p class="text-light">${dat.likes === undefined ? 0 : dat.likes} </p>
     </div>
     <div class="comments">
     <ion-icon name="chatbubble" class="message" id="btn-${dat.id}"></ion-icon>
