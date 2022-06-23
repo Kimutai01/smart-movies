@@ -10,6 +10,7 @@ const commentPost = () => {
         item_id: dataId,
       };
       postComment(commentObj);
+
       commentMsg.value = '';
       userName.value = '';
     }
@@ -37,7 +38,7 @@ const postComment = async (commentObj) => {
 
 const displayComments = (data) => {
   let output = '';
-  // const commentNum = data.length;
+  const commentNum = data.length;
   data.forEach((item) => {
     const location = document.querySelector('.Load_comment');
     output += `
@@ -51,6 +52,7 @@ const displayComments = (data) => {
     `;
     location.innerHTML = output;
   });
+  commentCounter(commentNum);
 };
 
 const getComment = async (dataId) => {
@@ -59,4 +61,9 @@ const getComment = async (dataId) => {
   );
   const data = await response.json();
   displayComments(data);
+};
+
+const commentCounter = (num) => {
+  const pos = document.querySelector('.comment-count');
+  pos.innerHTML = num;
 };

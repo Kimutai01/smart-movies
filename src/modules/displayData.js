@@ -64,7 +64,7 @@ export const displayPopup = (data) => {
                   ${dat.summary}
                   </p>
                   <div class="show-msg">
-                    <ion-icon name="chevron-up-circle-outline" class="show"></ion-icon>
+                  <i class="fa-solid fa-circle-arrow-up show-id"></i>
                     <p>Show comments</p>
                   </div>
                  </div>
@@ -114,13 +114,35 @@ const modal = document.querySelector('.modal1');
 
 document.querySelector('.modal1').addEventListener('click', (e) => {
   const comments = document.querySelector('.scroll-div');
-  if (e.target.classList.contains('show')) {
+  const showIcon = document.querySelector('.show-id');
+  if (showIcon.classList.contains('fa-circle-arrow-up') && e.target.classList.contains('show-id')) {
     comments.style.display = 'block';
+    showIcon.classList.remove('fa-circle-arrow-up');
+    showIcon.classList.add('fa-circle-arrow-down');
+  } else if (showIcon.classList.contains('fa-circle-arrow-down')) {
+    comments.style.display = 'none';
+    showIcon.classList.add('fa-circle-arrow-up');
+    showIcon.classList.remove('fa-circle-arrow-down');
   } else {
     comments.style.display = 'none';
   }
   if (e.target.classList.contains('btn-close')) {
     popupModal.style.display = 'none';
     modal.style.display = 'none';
+  }
+});
+
+const toggleIcon = document.querySelector('.iconn');
+const navbar = document.querySelector('.search-section');
+
+toggleIcon.addEventListener('click', () => {
+  if (toggleIcon.classList.contains('fa-bars')) {
+    toggleIcon.classList.remove('fa-bars');
+    toggleIcon.classList.add('fa-xmark');
+    navbar.style.display = 'block';
+  } else if (toggleIcon.classList.contains('fa-xmark')) {
+    navbar.style.display = 'none';
+    toggleIcon.classList.remove('fa-xmark');
+    toggleIcon.classList.add('fa-bars');
   }
 });
