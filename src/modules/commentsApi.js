@@ -52,7 +52,7 @@ const displayComments = (data) => {
     `;
     location.innerHTML = output;
   });
-  commentCounter(commentNum);
+ 
 };
 
 const getComment = async (dataId) => {
@@ -61,9 +61,15 @@ const getComment = async (dataId) => {
   );
   const data = await response.json();
   displayComments(data);
+  commentCounter(data);
 };
 
-const commentCounter = (num) => {
-  const pos = document.querySelector('.comment-count');
-  pos.innerHTML = num;
+
+const commentCounter = async (comments) => {
+  let count = 0;
+for(let i =0; i< comments.length; i+=1){
+   count+=1;
+}
+const pos = document.querySelector('.comment-count');
+  pos.innerHTML = count;
 };
