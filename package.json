@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
+    "watch": "jest --watch",
     "start": "webpack serve --open",
     "server": "node server.js",
     "build": "webpack --mode production",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Josphat205/webpack-setup#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^4.0.0",
