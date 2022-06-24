@@ -3,7 +3,7 @@
 A website that enables a user to search a movie of his/her interest
 
 ## Live Demo
-[Live Demo Link]([Live Demo Link](https://drive.google.com/file/d/13St7r7ganIbEjJJyNaU-4XpW7wb1sJwK/view?usp=sharing))
+[Live Demo Link](https://drive.google.com/file/d/13St7r7ganIbEjJJyNaU-4XpW7wb1sJwK/view?usp=sharing)
 [Live presentation](https://drive.google.com/file/d/13St7r7ganIbEjJJyNaU-4XpW7wb1sJwK/view?usp=sharing)
 
 ![screenshot](./smart.png)
