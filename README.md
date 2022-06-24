@@ -4,6 +4,7 @@ A website that enables a user to search a movie of his/her interest
 
 ## Live Demo
 [Live Demo Link](https://jazzy-trifle-ece48e.netlify.app/)
+## Live presentation
 [Live presentation](https://drive.google.com/file/d/12iF6YU92pS0TIpOoiHMl7X6kdWK1v1_x/view?usp=sharing)
 
 ![screenshot](./smart.png)
