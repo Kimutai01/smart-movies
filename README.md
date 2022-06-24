@@ -1,72 +1,59 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# SMART MOVIES
 
-# Project Name
+A website that enables a user to search a movie of his/her interest
 
-> Description the project.
+## Live Demo
+[Live Demo Link](https://jazzy-trifle-ece48e.netlify.app/)
+## Live presentation
+[Live presentation](https://drive.google.com/file/d/12iF6YU92pS0TIpOoiHMl7X6kdWK1v1_x/view?usp=sharing)
 
+![screenshot](./smart.png)
 
-## Built With
+## Run Locally
 
-- Major languages
-- Frameworks
-- Technologies used
+Clone the project
 
-## Live Demo (if available)
+```bash
+  git clone git@github.com:Kimutai01/smart-movies.git
+```
 
-[Live Demo Link](https://livedemo.com)
+Go to the project directory
 
+```bash
+  cd my-project
+```
 
-## Getting Started
+Install dependencies
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+```bash
+  npm install
+```
 
+Start the server
 
-To get a local copy up and running follow these simple example steps.
+```bash
+  npm run start
+```
 
-### Prerequisites
+## Josphat Kiploman
 
-### Setup
+- [@Github](https://github.com/Josphat205)
 
-### Install
+- [@Linkedin](https://www.linkedin.com/in/josphat-kiploman-797430236/)
 
-### Usage
+## Kiprotich Kimutai
 
-### Run tests
+- [@Github](https://github.com/Kimutai01)
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- [@Linkedin](https://www.linkedin.com/in/kimutai-kiprotich-1b5045216/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Give a ⭐ if you like this project!
 
 ## 📝 License
 
