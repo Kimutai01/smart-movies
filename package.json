@@ -8,7 +8,8 @@
     "start": "webpack serve --open",
     "server": "node server.js",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Josphat205/webpack-setup/issues"
+    "url": "https://github.com/Kimutai01/smart-movies/issues"
   },
-  "homepage": "https://github.com/Josphat205/webpack-setup#readme",
+  "homepage": "https://github.com/Kimutai01/smart-movies",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "css-loader": "^6.7.1",
