@@ -21,32 +21,36 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light main-nav fixed-top">
-      <div class="container-fluid">
+     <div class="container-fluid">
         <a class="navbar-brand logo" href="#">Smart movies</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars iconn"></i>
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon iconn"></span>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-          <div class="form-div mx-auto"></div>
-          <div class="search-section">
-            <form class="d-flex search-div">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success btn-2" type="submit">
-                Search
-              </button>
-            </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="form-div mx-auto">
+            <p class="counter"></p>
           </div>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
       </div>
     </nav>
     <div class="text-light" id="blaa"></div>

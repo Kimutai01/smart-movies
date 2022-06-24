@@ -23,6 +23,7 @@ const getData = async () => {
   displayPopup(data);
   commentPost(data);
   likeFun(data);
+  homeCounter(data);
 };
 export default getData;
 const likeFun = (data) => {
@@ -60,4 +61,13 @@ const displayLikeData = async () => {
   );
   const data2 = await response.json();
   return data2;
+};
+
+const homeCounter = (data) => {
+  let sum = 0;
+  data.forEach(() => {
+    sum += 1;
+  });
+  const paraC = document.querySelector('.counter');
+  paraC.textContent = `${sum} movies`;
 };

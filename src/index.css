@@ -132,6 +132,12 @@ footer {
   margin-top: 2px;
 }
 
+.counter {
+  font-size: 1.5rem;
+  color: #e67e22;
+  margin-top: 10px;
+}
+
 .modal1 {
   border-radius: 10px;
   display: none;
@@ -172,7 +178,7 @@ footer {
 .header2 p,
 .header3 p {
   font-size: 1.2rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
@@ -183,7 +189,7 @@ footer {
 
 .paragraph p {
   font-size: 1.2rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
@@ -202,7 +208,7 @@ footer {
 .s-item p {
   color: black;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   padding: 5px;
 }
@@ -227,7 +233,7 @@ footer {
 
 #movie-title {
   font-size: 25px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
 }
 
@@ -241,7 +247,7 @@ footer {
 
 .mr-4 {
   margin-right: 4%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 
@@ -278,7 +284,7 @@ footer {
 .comment-title {
   padding: 2px;
   font-size: 1.2rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
@@ -296,7 +302,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
